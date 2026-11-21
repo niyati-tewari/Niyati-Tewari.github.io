@@ -1,0 +1,33 @@
+:root{--bg:#f7f2ea;--ink:#1f1a17;--muted:#6b6058;--accent:#b5532e;--card:#fffaf3;--line:#e4d9cb}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:"Inter",system-ui,sans-serif;line-height:1.6;font-size:17px}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:880px;margin:0 auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:28px 0}
+nav .logo{font-family:"Fraunces",serif;font-size:22px;font-weight:600;color:var(--ink)}
+nav ul{display:flex;gap:24px;list-style:none}
+nav ul a{color:var(--muted);font-size:15px}nav ul a.active,nav ul a:hover{color:var(--ink);text-decoration:none}
+h1,h2,h3{font-family:"Fraunces",serif;font-weight:500;line-height:1.15}
+h1{font-size:clamp(40px,7vw,68px);margin:72px 0 20px}
+h1 em{color:var(--accent);font-style:italic}
+h2{font-size:32px;margin:56px 0 18px}
+h3{font-size:21px;margin-bottom:4px}
+.lede{font-size:20px;color:var(--muted);max-width:620px}
+.btns{margin:32px 0 80px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:12px 22px;border-radius:999px;border:1px solid var(--ink);color:var(--ink);font-size:15px}
+.btn.primary{background:var(--ink);color:var(--bg)}.btn:hover{text-decoration:none;opacity:.85}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+.card .tag{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:8px;display:block}
+.card p{color:var(--muted);font-size:15px;margin-top:8px}
+.stats{display:flex;gap:40px;flex-wrap:wrap;margin:8px 0 40px}
+.stats b{display:block;font-family:"Fraunces",serif;font-size:36px;font-weight:500;color:var(--accent)}
+.stats span{color:var(--muted);font-size:14px}
+.timeline{border-left:2px solid var(--line);padding-left:24px}
+.item{margin-bottom:28px;position:relative}
+.item:before{content:"";position:absolute;left:-31px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+.item .meta{color:var(--muted);font-size:14px}
+.item p{margin-top:6px}
+p+p{margin-top:14px}
+footer{border-top:1px solid var(--line);margin-top:96px;padding:28px 0;color:var(--muted);font-size:14px}
+@media(max-width:600px){nav{flex-direction:column;gap:12px}nav ul{gap:16px}}
