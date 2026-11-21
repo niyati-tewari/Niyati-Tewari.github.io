@@ -1,1 +1,1 @@
-# Niyati-TewariSite.github.io
+# niyati-tewari.github.io
